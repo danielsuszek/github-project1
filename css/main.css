@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -54,7 +56,7 @@ a {
 .main-header__header-content__wrapper {
     flex: 1 1 50%;        
     display: flex;
-    
+    font-family: 'Libre Franklin', sans-serif;   
 }
 
 .main-header__header-content {
@@ -63,15 +65,19 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     margin-left: -200px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+.main-header__header-content h2 {    
+    font-size: 2rem;
+    line-height: .8rem;
 }
 
 .main-header__header-content--info {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
     background-color: rgba(243, 241, 239, 0.8) ;    
-    padding: 10px;
-    
+    padding: 10px 20px;
 }
 
 .main-header__header-content--info div {
@@ -79,8 +85,19 @@ a {
     justify-content: flex-end;
 }    
 
+
+.main-header__header-content--info h2:nth-child(2) {
+    color: burlywood;
+    padding-bottom: 15px;
+}
+
+.main-header__header-content p {
+    font-size: 1.3rem;
+    line-height: .3rem;
+}
+
 .main-header__header-content--info div p {
-    padding-top: 5px;
+    padding-top: 10px;    
 }
 
 
