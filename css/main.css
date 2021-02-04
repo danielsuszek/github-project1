@@ -70,7 +70,8 @@ a {
 
 .main-header__header-content h2 {    
     font-size: 2rem;
-    line-height: .8rem;
+    /*line-height: 15px;*/
+    /*line-height: .8rem;*/
 }
 
 .main-header__header-content--info {
@@ -87,27 +88,36 @@ a {
 
 
 .main-header__header-content--info h2:nth-child(2) {
-    color: burlywood;
+    color: rgb(222,184,135); /* burlywood */
     padding-bottom: 15px;
 }
 
 .main-header__header-content p {
     font-size: 1.3rem;
-    line-height: .3rem;
+    /*line-height: .3rem;*/
 }
 
 .main-header__header-content--info div p {
     padding-top: 10px;    
 }
 
-
-/*.contactme-buttons button {
-    border: 1px solid #000;
-    padding: 20px;
-}*/
-
 .main-header__header-content--contactme div {
     text-align: right;
 }
     
+.contactme-buttons button {
+    color: #fff;
+    font-size: 1.2rem;
+    background: url('../graphics/button_01.png') no-repeat top left;
+    width: 205px;
+    height: 70px;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+/*button {
+    border: none;
+    background: url('../graphics/button_01.png') no-repeat top left;
+    padding: 2px 8px;
+}*/
