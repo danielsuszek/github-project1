@@ -11,7 +11,6 @@ body {
     color: #000;
 }
 
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -20,6 +19,41 @@ ul {
 a {
     color: #000;
     text-decoration: none;
+}
+
+h2 {
+    font: bold 30px 'Libre Franklin';
+    margin: 10px;
+}
+
+p {
+    font: 18px 'Libre Franklin';    
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font: bold 18px 'Libre Franklin';        
+    border: transparent;
+    cursor: pointer;    
+    margin-left: 20px;
+/*    font-size: 1.2rem;
+    background: url('../graphics/button_01.png') no-repeat top left;
+    background-color: transparent;*/
+}
+
+.main-color {
+    color: rgba(222, 164, 135, 1);
+}
+
+.rounded-with-shadow {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
+}
+
+.main-bg-gradient {
+    background-image: linear-gradient(to right, rgba(252,184,135, 0.7), rgba(252,184,135, 1));
 }
 
 .page--container {
@@ -35,7 +69,6 @@ a {
     width: 100%;
     height: 100%;
     border: 2px solid #000;
-    /*background: url('background-circles.png') no-repeat top left;*/
     background-image: url('../graphics/background-circles.png');
 }
 
@@ -56,7 +89,6 @@ a {
 .main-header__header-content__wrapper {
     flex: 1 1 50%;        
     display: flex;
-    font-family: 'Libre Franklin', sans-serif;   
 }
 
 .main-header__header-content {
@@ -65,18 +97,10 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     margin-left: -200px;
-    padding-bottom: 40px;
-}
-
-.main-header__header-content h2 {    
-    font-size: 2rem;
-    /*line-height: 15px;*/
-    /*line-height: .8rem;*/
+    padding-bottom: 20px;
 }
 
 .main-header__header-content--info {
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
     background-color: rgba(243, 241, 239, 0.8) ;    
     padding: 10px 20px;
 }
@@ -88,36 +112,14 @@ a {
 
 
 .main-header__header-content--info h2:nth-child(2) {
-    color: rgb(222,184,135); /* burlywood */
     padding-bottom: 15px;
 }
 
-.main-header__header-content p {
-/*    font-size: 1.3rem;*/
-    /*line-height: .3rem;*/
-}
-
 .main-header__header-content--info div p {
-    padding-top: 10px;    
+    padding: 10px 10px 0 0;    
 }
 
 .main-header__header-content--contactme div {
     text-align: right;
 }
     
-.contactme-buttons button {
-    color: #fff;
-    font-size: 1.2rem;
-    background: url('../graphics/button_01.png') no-repeat top left;
-    width: 205px;
-    height: 70px;
-    border: transparent;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-/*button {
-    border: none;
-    background: url('../graphics/button_01.png') no-repeat top left;
-    padding: 2px 8px;
-}*/
