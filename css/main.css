@@ -9,7 +9,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #999;
+    /*background-color: #999;*/
+    background-color: rgba(200, 200, 200, 0.5);
     color: #000;
 }
 
@@ -41,7 +42,7 @@ button {
     font: bold 18px 'Libre Franklin';        
     border: transparent;
     cursor: pointer;    
-    margin-left: 20px;
+    margin: 10px 0 10px 10px;
 /*    font-size: 1.2rem;
     background: url('../graphics/button_01.png') no-repeat top left;
     background-color: transparent;*/
@@ -70,14 +71,14 @@ button {
     background-color: rgba(191, 191, 191, 0.7);
     box-shadow: 5px 5px 5px rgba(191, 191, 191, 0.7);
 }
+
 /***** layout styles *****/
 
 /****** main layout styles *****/
 .page--container {
-    min-width: 430px;
     max-width: 1600px;
     height: 1600px;
-    width: 100vw;
+    width: 100%;
     margin: 10px auto; 
     background-color: rgba(243, 241, 239, 1) ;
     border: 1px dotted #aaa;
@@ -92,11 +93,8 @@ button {
 /***** navigation styles *****/
 
 .main-nav__wrapper {
-    /*height: 150px;*/
     display: flex;
-    justify-content: space-between;
-    padding: 10px 5px;
-    /*flex-wrap: wrap;*/
+    justify-content: center;
 }
 
 .main-nav__nav--initials {
@@ -106,30 +104,36 @@ button {
 
 .main-nav__nav__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-nav__nav__wrapper--links {
-    /*border: 1px dotted #000;*/
+.main-nav__nav__wrapper--links  {
+    /*border: 1px dotted #000;*/    
 }
+
+.main-nav__nav__wrapper--links a {
+    /*border: 1px dotted #000;*/    
+}
+
 
 .main-nav__nav__wrapper--links ul {
     display: flex;
 }
 
-.main-nav__nav__wrapper--social {
-    border: 1px dotted #000;
-    padding: 0;
+.main-nav__nav__wrapper--social ul {
+    border-left: 2px solid #fff;
 }
 
 .main-nav__nav__wrapper--social img {
     width: 40px;
-    border: 1px dotted #000;
+    /*border: 1px dotted #000;*/
 }
 
 .main-nav__nav__wrapper--social ul {
     display: flex;
 }
+
 /****** header styles *****/
 
 .main-header__wrapper {
@@ -139,10 +143,6 @@ button {
 
 .main-header__header-picture__wrapper {
     flex: 1 1 50%;
-}
-
-.main-header__header-picture__wrapper div {
-    min-width: 400px;
 }
 
 .main-header__header-picture__wrapper div img {
@@ -160,7 +160,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: -200px;
     padding-bottom: 20px;
 }
 
@@ -184,5 +183,92 @@ button {
 
 .main-header__header-content--contactme div {
     text-align: right;
+    margin-right: 20px;
+}
+
+.contactme-buttons {
+    border: 2px dotted #000;
+    text-align: right;
 }
     
+@media only screen and (min-width: 576px) {
+    .main-nav__nav__wrapper {
+        flex-direction: row;
+        flex: 1 1 100%;
+        justify-content: space-around;
+    }   
+
+/*    .main-nav__nav__wrapper ul {
+        border-left: 1px solid #fff;
+    }   */
+    
+/*    .contactme-buttons {
+        display: flex;
+        justify-content: flex-end;
+    }*/
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 2vw;
+    }
+    
+    p {
+        font-size: 1.5vw;
+    }
+    
+    button {
+        width: 18vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+    .main-header__wrapper {
+        flex-direction: row;
+    }
+    .main-header__header-content__wrapper {
+
+        margin-left: -100px;
+        margin-top: 20px;
+    }
+    
+    .main-header__header-content--contactme div {
+        margin-right: 0;
+    }
+    
+    
+}    
+
+@media only screen and (min-width: 992px) {
+    .main-nav__nav--initials {
+        display: block;
+    }
+    
+}    
+
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font: bold 30px 'Libre Franklin';
+        margin: 10px;
+    }
+
+    p {
+        font: 18px 'Libre Franklin';    
+    }
+
+    button {
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font: bold 18px 'Libre Franklin';        
+        border: transparent;
+        cursor: pointer;    
+        margin: 10px 0 10px 10px;
+    }
+    
+    .main-header__header-content__wrapper {
+        margin-left: -200px;
+        margin-top: 20px;
+    }
+    
+}    
