@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 /****** global element styles *****/
 
 *, *::after, *::before {
@@ -72,6 +72,21 @@ button {
     box-shadow: 5px 5px 5px rgba(191, 191, 191, 0.7);
 }
 
+.dark-gray-shadow {
+    /*background-color: rgba(171, 171, 171, 0.7);*/
+    box-shadow: 5px 5px 5px rgba(171, 171, 171, 0.7);
+    border-radius: 10px;
+    /*box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);*/
+    
+}
+
+.initials {
+    color:rgba(171, 171, 171, 1);
+    font-size: 80px;
+    text-transform: uppercase;    
+    font-family: 'Sigmar One', cursive;
+}
+
 /***** layout styles *****/
 
 /****** main layout styles *****/
@@ -102,9 +117,10 @@ button {
 }
 
 .main-nav__nav__wrapper {
-    display: flex;
     flex-direction: column;
+    flex-basis: 100%;
     align-items: center;
+    display: flex;
 }
 
 .main-nav__nav__wrapper--links  {
@@ -193,18 +209,21 @@ button {
 @media only screen and (min-width: 576px) {
     .main-nav__nav__wrapper {
         flex-direction: row;
-        flex: 1 1 100%;
+        flex-basis: 100%;
         justify-content: space-around;
     }   
-
-/*    .main-nav__nav__wrapper ul {
-        border-left: 1px solid #fff;
-    }   */
     
-/*    .contactme-buttons {
-        display: flex;
-        justify-content: flex-end;
-    }*/
+    .main-nav__nav__wrapper--links {
+        flex-basis: 70%;
+    }
+    
+    main-nav__nav__wrapper--social {
+        flex-basis: 30%;
+    }
+    
+    .main-nav__nav__wrapper--links ul {
+        justify-content: space-around;        
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -225,8 +244,8 @@ button {
     .main-header__wrapper {
         flex-direction: row;
     }
+    
     .main-header__header-content__wrapper {
-
         margin-left: -100px;
         margin-top: 20px;
     }
@@ -234,7 +253,6 @@ button {
     .main-header__header-content--contactme div {
         margin-right: 0;
     }
-    
     
 }    
 
@@ -256,6 +274,23 @@ button {
         border: transparent;
         cursor: pointer;    
         margin: 10px 0 10px 10px;
+    }
+    
+    .main-nav__wrapper {
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-nav__nav--initials {
+        display: block;
+        flex-basis: 20%;
+        /*border: 1px dotted #000;*/        
+    }
+    
+    .main-nav__nav__wrapper {
+        flex-basis: 60%;
+        justify-content: space-around;
     }
     
     .main-header__header-content__wrapper {
